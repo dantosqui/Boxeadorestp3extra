@@ -65,8 +65,9 @@ Boxeador IngresarBoxeador()
     int peso = IngresarInt("Ingresar el peso del boxeador (kg)");
     int pG; do{ pG= IngresarInt("Ingresar la potencia de golpe del boxeador (Entre 1 y 100)");} while(pG>100 || pG<1);
     int vP; do{ vP= IngresarInt("Ingresar la velocidad de piernas del boxeador (Entre 1 y 100)");} while(vP>100 || vP<1);
+    int iq = IngresarInt("Ingresar la inteligencia");
 
-    return b = new Boxeador(nom,pais,peso,pG,vP);
+    return b = new Boxeador(nom,pais,peso,pG,vP,iq);
 
     Console.WriteLine("Se ha creado el boxeador " + b.Nombre);
 }
