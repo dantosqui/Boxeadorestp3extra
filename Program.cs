@@ -9,7 +9,7 @@ void Menu()
     Boxeador boxeador2=null;
 
     while (true){
-    Console.WriteLine("1. Cargar Datos Boxeador 1\n2. Cargar Datos Boxeador 2\n3. Pelear!\n4. Salir");
+    Console.WriteLine("1. Cargar Datos Boxeador 1\n2. Cargar Datos Boxeador 2\n3. Pelear!\n4. Salir\n5. Cambiar atributos");
 
     resp = int.Parse(Console.ReadLine());
 
@@ -40,6 +40,9 @@ void Menu()
 
         case 4:
         return;
+        case 5:
+        CambiarAtributos(ref boxeador1,ref boxeador2);
+        break;
         default:
         break;
         
@@ -125,4 +128,25 @@ Console.WriteLine("No se ha ingresado algun boxeador");
 
 }
 
+void CambiarAtributos(ref Boxeador b1, ref Boxeador b2) {
 
+if (b1!=null && b2!=null) {
+
+
+Console.WriteLine("A continuacion ingrese los atributos o ingrese 0 para omitir. Recuerde que debe ser entre 1 y 100");
+
+int vp; do{vp= IngresarInt("Ingrese la velocidad de las piernas de " + b1.Nombre + " , el boxeador n°1");} while(vp<0 || vp>100);
+if (vp!=0) {b1.VelocidadPiernas=vp;}
+
+int pg; do{pg= IngresarInt("Ingrese la velocidad de las piernas de " + b1.Nombre + " , el boxeador n°1");} while(vp<0 || vp>100);
+if (pg!=0) {b1.PotenciaGolpes=pg;}
+
+do{vp= IngresarInt("Ingrese la velocidad de las piernas de " + b2.Nombre + " , el boxeador n°2");} while(vp<0 || vp>100);
+if (vp!=0) {b2.VelocidadPiernas=vp;}
+
+do{pg= IngresarInt("Ingrese la velocidad de las piernas de " + b2.Nombre + " , el boxeador n°2");} while(vp<0 || vp>100);
+if (pg!=0) {b2.PotenciaGolpes=pg;}
+
+}
+else Console.WriteLine("Aun no se han añadido ambos boxeadores");
+}
