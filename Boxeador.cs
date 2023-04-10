@@ -1,10 +1,10 @@
 class Boxeador {
 
-string Nombre {get; set;}
-string Pais {get; set;}
-int Peso {get; set;}
-int PotenciaGolpes {get; set;}
-int VelocidadPiernas {get; set;}
+public string Nombre {get; set;}
+public string Pais {get; set;}
+public int Peso {get; set;}
+public int PotenciaGolpes {get; set;}
+public int VelocidadPiernas {get; set;}
 
 public Boxeador(string _nom, string _pais, int _peso, int _pG, int _vP){
 
