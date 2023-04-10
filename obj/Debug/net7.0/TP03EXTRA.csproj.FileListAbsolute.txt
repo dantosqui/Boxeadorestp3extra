@@ -1,0 +1,15 @@
+Z:\Programacion4\TP03EXTRA\bin\Debug\net7.0\TP03EXTRA.exe
+Z:\Programacion4\TP03EXTRA\bin\Debug\net7.0\TP03EXTRA.deps.json
+Z:\Programacion4\TP03EXTRA\bin\Debug\net7.0\TP03EXTRA.runtimeconfig.json
+Z:\Programacion4\TP03EXTRA\bin\Debug\net7.0\TP03EXTRA.dll
+Z:\Programacion4\TP03EXTRA\bin\Debug\net7.0\TP03EXTRA.pdb
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\TP03EXTRA.csproj.AssemblyReference.cache
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\TP03EXTRA.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\TP03EXTRA.AssemblyInfoInputs.cache
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\TP03EXTRA.AssemblyInfo.cs
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\TP03EXTRA.csproj.CoreCompileInputs.cache
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\TP03EXTRA.dll
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\refint\TP03EXTRA.dll
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\TP03EXTRA.pdb
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\TP03EXTRA.genruntimeconfig.cache
+Z:\Programacion4\TP03EXTRA\obj\Debug\net7.0\ref\TP03EXTRA.dll
