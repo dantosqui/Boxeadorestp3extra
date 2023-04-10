@@ -7,6 +7,8 @@ void Menu()
     int resp;
     Boxeador boxeador1=null;
     Boxeador boxeador2=null;
+
+    while (true){
     Console.WriteLine("1. Cargar Datos Boxeador 1\n2. Cargar Datos Boxeador 2\n3. Pelear!\n4. Salir");
 
     resp = int.Parse(Console.ReadLine());
@@ -36,10 +38,16 @@ void Menu()
             Pelear(boxeador1, boxeador2);
             break;
 
+        case 4:
+        return;
+        default:
+        break;
+        
+        
 
 
     }
-}
+}}
 
 
 
@@ -51,7 +59,7 @@ Boxeador IngresarBoxeador()
         Boxeador b;
     string nom = IngresarString("Ingresar el nombre del boxeador");
     string pais = IngresarString("Ingresar el pais del boxeador");
-    int peso = IngresarInt("Ingresar el peso del boxeador");
+    int peso = IngresarInt("Ingresar el peso del boxeador (kg)");
     int pG; do{ pG= IngresarInt("Ingresar la potencia de golpe del boxeador (Entre 1 y 100)");} while(pG>100 || pG<1);
     int vP; do{ vP= IngresarInt("Ingresar la velocidad de piernas del boxeador (Entre 1 y 100)");} while(vP>100 || vP<1);
 
@@ -80,16 +88,16 @@ int IngresarInt(string prompt)
 void Pelear(Boxeador _b1, Boxeador _b2)
 {
 
+
+
+
+if(_b1 != null && _b2 != null){
+
 double s1 = _b1.ObtenerSkill();
 double s2 = _b2.ObtenerSkill();
 
 double difAbs = Math.Abs(s1-s2);
 string ganador = s1-s2 >0 ? _b1.Nombre : _b2.Nombre; 
-
-
-if(_b1 != null && _b2 != null){
-
-
 
 if(difAbs >= 30){
 
