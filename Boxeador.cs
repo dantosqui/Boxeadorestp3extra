@@ -43,7 +43,11 @@ return VelocidadPiernas *.6f + PotenciaGolpes *.8f + new Random().Next(1,10) + I
 
 
 
-
+void AtributosAleatoreos(){
+    Random r = new Random();
+    VelocidadPiernas = r.Next(1,100);
+    PotenciaGolpes = r.Next(1,100);
+}
 
 
 

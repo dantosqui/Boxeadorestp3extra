@@ -39,12 +39,17 @@ void Menu()
             break;
 
         case 4:
-        return;
+        
+            return;
+        
         case 5:
-        CambiarAtributos(ref boxeador1,ref boxeador2);
-        break;
+
+            CambiarAtributos(ref boxeador1,ref boxeador2);
+            break;
+        
         default:
-        break;
+            
+            break;
         
         
 
@@ -139,13 +144,13 @@ Console.WriteLine("A continuacion ingrese los atributos o ingrese 0 para omitir.
 int vp; do{vp= IngresarInt("Ingrese la velocidad de las piernas de " + b1.Nombre + " , el boxeador n°1");} while(vp<0 || vp>100);
 if (vp!=0) {b1.VelocidadPiernas=vp;}
 
-int pg; do{pg= IngresarInt("Ingrese la velocidad de las piernas de " + b1.Nombre + " , el boxeador n°1");} while(vp<0 || vp>100);
+int pg; do{pg= IngresarInt("Ingrese la potencia de los golpes de " + b1.Nombre + " , el boxeador n°1");} while(vp<0 || vp>100);
 if (pg!=0) {b1.PotenciaGolpes=pg;}
 
 do{vp= IngresarInt("Ingrese la velocidad de las piernas de " + b2.Nombre + " , el boxeador n°2");} while(vp<0 || vp>100);
 if (vp!=0) {b2.VelocidadPiernas=vp;}
 
-do{pg= IngresarInt("Ingrese la velocidad de las piernas de " + b2.Nombre + " , el boxeador n°2");} while(vp<0 || vp>100);
+do{pg= IngresarInt("Ingrese la potencia de los golpes de " + b2.Nombre + " , el boxeador n°2");} while(vp<0 || vp>100);
 if (pg!=0) {b2.PotenciaGolpes=pg;}
 
 }
